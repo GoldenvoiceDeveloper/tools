@@ -89,3 +89,10 @@ System.out.println(GetTraditionStrokeCount("一")); // 輸出：1
 System.out.println(GetTraditionStrokeCount("繁")); // 輸出：18
 System.out.println(GetTraditionStrokeCount("A")); // 輸出：-1（非繁體中文字）
 ```
+
+
+### 特殊情況：注音符號的筆畫用以下陣列進行例外處理。
+### 例如：ㄅ = 1, ㄆ = 2, ㄓ = 3
+```java
+private static String[] Phonetic_stroke = { "ㄅㄋㄑㄟㄣㄥㄧ˙ˊˇˋ", "ㄆㄇㄈㄉㄌㄍㄎㄏㄐㄒㄗㄘㄙㄛㄜㄡㄢㄦㄨㄩ", "ㄊㄔㄕㄚㄝㄞㄠㄤ", "ㄓㄖ" };
+```
